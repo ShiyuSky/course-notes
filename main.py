@@ -130,7 +130,7 @@ def propagate(w, b, X, Y):
     
     # FORWARD PROPAGATION (FROM X TO COST)
     A = sigmoid(np.dot(w.T, X) + b)     # compute activation
-    cost = - (1/m) * (np.sum(Y * np.log(A)) + np.sum((1 - Y) * np.log(1 - A)))                                 # compute cost
+    cost = - (1/m) * (np.sum(Y * np.log(A)) + np.sum((1 - Y) * np.log(1 - A)))   # compute cost
     
     # BACKWARD PROPAGATION (TO FIND GRAD)
     dz = A - Y
@@ -316,7 +316,8 @@ learning_rates = [0.01, 0.001, 0.0001]
 models = {}
 for i in learning_rates:
     print ("learning rate is: " + str(i))
-    models[str(i)] = model(train_set_x, train_set_y, test_set_x, test_set_y, num_iterations = 1500, learning_rate = i, print_cost = False)
+    models[str(i)] = model(train_set_x, train_set_y, test_set_x, test_set_y,
+                           num_iterations = 1500, learning_rate = i, print_cost = False)
     print ('\n' + "-------------------------------------------------------" + '\n')
 
 for i in learning_rates:
@@ -330,6 +331,8 @@ frame = legend.get_frame()
 frame.set_facecolor('0.90')
 plt.show()
 
+
+# test single image
 my_image = "cat.jpg"
 fname = "images/" + my_image
 image = np.array(ndimage.imread(fname, flatten=False))
@@ -337,4 +340,4 @@ my_image = scipy.misc.imresize(image, size=(num_px,num_px)).reshape((1, num_px*n
 my_predicted_image = predict(d["w"], d["b"], my_image)
 
 plt.imshow(image)
-print("y = " + str(np.squeeze(my_predicted_image)) + ", your algorithm predicts a \"" + classes[int(np.squeeze(my_predicted_image)),].decode("utf-8") +  "\" picture.")
+print("y = " + str(np.squeeze(my_predicted_image)) + ", the algorithm predicts a \"" + classes[int(np.squeeze(my_predicted_image)),].decode("utf-8") +  "\" picture.")
