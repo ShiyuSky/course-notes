@@ -1,2 +1,2 @@
-# NeuralCat
-A Neural Network model for recognizing cat images
+# Coursera Coursework
+1. A simple Neural Network model for recognizing cat images
