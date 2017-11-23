@@ -1,2 +1,4 @@
 # Coursera Coursework
-1. A simple Neural Network model using logistic regression to recognize cat images
+-------------------------------------------------------
+# Neural Networks and Deep Learning
+1. cat_recognition: A simple Neural Network model using logistic regression to recognize cat images
