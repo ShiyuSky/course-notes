@@ -1,4 +1,4 @@
-# Coursera Coursework
+# Course Notes
 
 Neural Networks and Deep Learning (taught by Andrew Ng)
 1. cat_recognition: A simple Neural Network model using logistic regression to recognize cat images
