@@ -8,3 +8,4 @@ Neural Networks and Deep Learning (taught by Andrew Ng)
 
 Derivatives
 * futures: Mechanics of Futures market, Contango vs Backwardation, Cost of Carry, Margin Call
+* hedging_using_futures: Long/Short Hedge, Basis, Cross Hedging, Optimal Hedge Ratio, Stack and Roll
