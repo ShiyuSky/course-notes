@@ -13,3 +13,5 @@ Derivatives
 
 Artificial Intelligence
 * problem_solving: methodology, heuristics, A\* search, CSP, consistency algorithms, backtracking search, local search
+* bayesian_network: Inference, Dynamic System, Markov Chain, Hidden Markov Model
+* game_theory: Framework, Nash Equilibrium, Pareto Optimal
